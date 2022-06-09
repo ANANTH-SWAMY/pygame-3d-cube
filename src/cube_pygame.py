@@ -51,7 +51,7 @@ planes= [
         [[(1,-1,1)],[(1,1,1)],[(1,1,-1)],[(1,-1,-1)],[(1,0,0)]],
         [[(1,-1,-1)],[(1,1,-1)],[(-1,1,-1)],[(-1,-1,-1)],[(0,0,-1)]]
         ]
-g=1
+
 clock = pygame.time.Clock()
 while True:
     surfaces =[
@@ -111,5 +111,3 @@ while True:
         draw_plane(surfaces[i],col)
 
     pygame.display.update()
-    pygame.image.save(screen, f"{g}.png")
-    g+=1
